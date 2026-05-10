@@ -1,3 +1,5 @@
+// 注意：请先从 https://github.com/OrangeCloud-SDK-IM/orangecloud-im-android 下载 AAR
+// 放入本项目 libs/ 目录后即可编译
 plugins {
     kotlin("jvm") version "1.9.22"
     application

@@ -3,15 +3,17 @@ import PackageDescription
 
 let package = Package(
     name: "OrangeCloudIMDemo",
-    platforms: [.iOS(.v16), .macOS(.v13)],
+    platforms: [.iOS(.v13), .macOS(.v10_15)],
     dependencies: [
-        .package(path: "../../ios/OrangeCloudIMClient"),
+        .package(url: "https://github.com/OrangeCloud-SDK-IM/orangecloud-im-ios.git", from: "1.1.0")
     ],
     targets: [
         .executableTarget(
             name: "OrangeCloudIMDemo",
-            dependencies: ["OrangeCloudIMClient"],
+            dependencies: [
+                .product(name: "OrangeCloudIMClient", package: "orangecloud-im-ios")
+            ],
             path: "Sources"
-        ),
+        )
     ]
 )

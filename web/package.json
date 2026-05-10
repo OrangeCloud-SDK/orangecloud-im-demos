@@ -1,14 +1,14 @@
 {
   "name": "@orangecloud/im-demo",
   "version": "1.0.0",
+  "description": "OrangeCloud IM SDK Web Demo",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
   },
   "dependencies": {
-    "@orangecloud/im-client": "workspace:*"
+    "@orangecloud/im-client": "git+https://github.com/OrangeCloud-SDK-IM/orangecloud-im-web.git#v1.1.0"
   },
   "devDependencies": {
     "vite": "^5.4.0"
